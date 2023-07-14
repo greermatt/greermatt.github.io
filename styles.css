@@ -1,0 +1,89 @@
+/* remember box-sizing, border-box tells brower to accourt for any border and padding, content-box gives you the default behavior */
+* { 
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    background-image: url(./images/augustine-wong-3Om4DHcaAc0-unsplash.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.35rem;
+}
+
+
+header {
+    position: relative;
+}
+
+#logo {
+    width: 35%;
+    max-width: 45%;
+    max-height: auto;
+    align-items: center;
+    padding-top: 2rem;
+    margin: 0;
+    z-index: 1;
+}
+
+/* nav bar */
+nav {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0.5rem;
+    content: ' ';
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+    
+a:hover {
+    color: rgba(0, 0, 0, 0.729);
+}
+    
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+/* about me */
+.my-photo-container {
+    padding: 1rem;
+}
+
+#my-photo {
+    object-fit: cover;
+    object-position: bottom;
+    width: 400px;
+    height: 400px;
+}
