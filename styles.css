@@ -2,11 +2,11 @@
 * { 
     box-sizing: border-box;
     text-transform: capitalize;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-    margin: 0;
-    padding: 0;
     font-size: 20px;
     background-image: url(./images/augustine-wong-3Om4DHcaAc0-unsplash.jpg);
     background-repeat: repeat-y;
@@ -16,16 +16,27 @@ html {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 h3 {
     font-size: 1.35rem;
 }
 
+h4 {
+    font-size: 1rem;
+}
+
 
 header {
     position: relative;
+    background-color: rgba(43, 202, 226, 0.428);
+    /* background color above to visualize box area */
+}
+
+#logo-design {
+    /* background-color: rgba(43, 202, 226, 0.428);
+    background color above to visualize box area */
 }
 
 #logo {
@@ -33,16 +44,19 @@ header {
     max-width: 45%;
     max-height: auto;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
     margin: 0;
     z-index: 1;
 }
 
 /* nav bar */
 nav {
+    /* background-color: rgba(226, 43, 43, 0.428);
+    background color above to visualize box area */
     margin: 0 auto;
     width: 100%;
     height: auto;
+    margin: 0.5rem auto;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -78,18 +92,44 @@ a:visited {
 }
 
 /* about me */
+#about-me {
+    background-color: rgba(137, 43, 226, 0.428);
+    /* background color above to visualize box area */
+}
+
+.about-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0.5rem auto;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
 .my-photo-container {
-    padding: 1rem;
+    margin: 0.25rem;
 }
 
 #my-photo {
     object-fit: cover;
     object-position: bottom;
-    width: 400px;
-    height: 400px;
+    width: 18rem;
+    height: 18rem;
+}
+
+.bio-container {
+    margin: auto 0.25rem;
 }
 
 /* projects section */
+#projects {
+    background-color: rgba(43, 226, 195, 0.777);
+    /* background color above to visualize box area */
+    margin: 0.5rem auto;
+}
+
+
 .projects-container {
     display: flex;
     width: 100%;
@@ -101,8 +141,56 @@ a:visited {
 }
 
 .project-image {
-    width: 400px;
-    height: 250px;
+    width: 20rem;
+    height: 12.5rem;
     object-fit: cover;
     object-position: center;
+}
+
+/* skill section */
+#skills {
+    background-color: rgba(220, 226, 43, 0.428);
+    /* background color above to visualize box area */
+    margin: 0.5rem auto;
+}
+
+.skills-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.skills {
+    max-width: 4rem;
+    max-height: 4rem;
+    margin: 0.8rem;
+}
+
+.skill-logo {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* contact section */
+#contact {
+    background-color: rgba(226, 104, 43, 0.428);
+    /* background color above to visualize box area */
+    margin: 0.5rem auto;
+}
+
+/* copywrite section */
+#copywrite {
+    background-color: rgba(43, 46, 226, 0.428);
+    /* background color above to visualize box area */
+    margin: 0.5rem auto;
+}
+
+.copywrite-text {
+    font-size: 0.5rem;
 }
