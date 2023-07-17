@@ -1,0 +1,206 @@
+/* universal */
+html {
+    background-image: url(./resources/images/white\ geo\ background.jpeg);
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 36px;
+    text-decoration: underline;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* heading */
+header {
+    width: 800px;
+    background-color: rgba(255, 255, 255, 0.70);
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 58px;
+    text-decoration: underline;
+    border: solid 2px black;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: auto;
+    padding-bottom: 15px;
+    padding-right: auto;
+    text-align: center;
+}
+
+/* Colors */
+/* .colors outside box */
+.colors {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(255, 255, 255, 0.70);
+    border: solid 1px black;
+    width: 800px;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    padding-right: auto;
+    padding-left: auto;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.color-square .names {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* .color-square are indivdual boxes inside larger box */
+.color-square {
+    display: inline-block;
+    height: auto;
+    margin: 10px;
+    width: 15%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#beige {
+    background-color: #BF9E60;
+}
+
+#yellow {
+    background-color: #F2C879;
+}
+
+#crimson {
+    background-color: #BF1B1B;
+}
+
+#blood {
+    background-color: #590A0A;
+}
+
+#brown {
+    background-color: #260A04;
+}
+
+/* Fonts */
+/* .fonts outside box */
+.fonts { 
+    border: solid 1px black;
+    background-color: rgba(255, 255, 255, 0.70);
+    width: 800px;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    padding-right: auto;
+    padding-left: auto;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* .font-tiles are indivdual boxes inside larger box */
+.font-tiles {
+    border: solid 1px black;
+    display: inline-block;
+    height: auto;
+    margin: 10px;
+    width: 550px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.font-tiles .font-names {
+    font-size: 36px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+#Bebas-Neue {
+    font-family: 'bebas neue';
+}
+
+#Averia-Sans-Libre {
+    font-family: 'Averia Sans Libre';
+}
+
+#Ubuntu {
+    font-family: 'Ubuntu'
+}
+
+.font-tiles .normal-text {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.font-tiles .bold-text {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.font-tiles .italic-text {
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Text Styles */
+/* outside box */
+.text-styles {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(255, 255, 255, 0.70);
+    border: solid 1px black;
+    width: 800px;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    padding-right: auto;
+    padding-left: auto;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* boxes inside */
+.style-tile {
+    border: dashed 2px black;
+    display: inline-block;
+    height: auto;
+    margin: 10px;
+    width: 500px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style-position: inside;
+    font-size: 16px;
+    text-align: center;
+    padding-right: 50px;
+}
+
+#h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* footer */
+footer {
+    border: solid 3px black;
+    background-color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    width: 800px;
+    margin: 10px auto;
+    text-transform: capitalize;
+}

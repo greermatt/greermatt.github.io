@@ -1,0 +1,299 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    background-image: url(https://images.pexels.com/photos/4862864/pexels-photo-4862864.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+/* nav bars*/
+.nav-bar {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000da;
+}
+
+a:visited {
+    color: #000000;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding-top: 0.5rem;
+    padding-right: 3rem;
+    list-style-type: none;
+    font-size: 2rem;
+    font-family: 'Give You Glory';
+}
+
+.nav-bar li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0.5rem;
+    content: ' ';
+}
+
+/* title */
+header {
+    background-color: #f6ff00;
+    margin: 1rem 0;
+}
+
+h1 {
+    font-family: 'Give You Glory';
+    text-decoration: underline;
+    color: #000000;
+    font-size: 4.5rem;
+    padding-top: 1rem;
+    margin: 0;
+}
+
+/* tablet adjust */
+@media only screen and (max-width: 775px) {
+    header {
+        background-color: #26ff00;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* mobile adjust */
+@media only screen and (max-width: 425px) {
+    header {
+        background-color: #6324f5;
+    }
+    h1 {
+        font-size: 2.5rem;
+    } 
+}
+
+/* Who Club Is */
+.summary {
+    background-color: #00c8ff;
+    margin: 1rem 0;
+}
+
+.summary-textbox {
+    padding: 1rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Raleway';
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.summary p {
+    font-family: 'Raleway';
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+}
+
+/* tablet adjust */
+@media only screen and (max-width: 775px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    .summary p {
+        font-size: 0.85rem;
+    }
+}
+
+/* mobile adjust */
+@media only screen and (max-width: 425px) {
+    h2 {
+        font-size: 1rem;
+    }
+    .summary p {
+        font-size: 0.65rem;
+    }
+}
+
+/* photo sections */
+.photos-container-1 .photo-container-2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* top section */
+.photos-1 {
+    background-color: #393939;
+    width: 100%;
+}
+
+.photos-1 .photos-container-1 img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    padding-top: 0.3rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    margin: 0;
+}
+/* bottom section */
+.photos-2 {
+    background-color: #808080;
+    width: 100%;
+}
+
+.photos-2 .photos-container-2 img {
+    width: 13.5rem;
+    height: 13.5rem;
+    object-fit: cover;
+    padding-top: 0.3rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    margin: 0;
+}
+
+/* tablet adjust */
+@media only screen and (max-width: 775px) {
+    .photos-1 .photos-container-1 img {
+        width: 30rem;
+        height: 30rem;
+    }
+    .photos-2 .photos-container-2 img {
+        width: 23.5rem;
+        height: 23.5rem;
+    }
+}
+
+/* mobile adjust */
+@media only screen and (max-width: 425px) {
+    .photos-1 .photos-container-1 img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .photos-2 .photos-container-2 img {
+        width: 8.5rem;
+        height: 8.5rem;
+    }
+}
+
+/* testimonials */
+.testimonials {
+    background-color: #fa4040;
+    padding-top: 1.75rem;
+    margin: 1rem 0;
+}
+
+h3 {
+    font-family: "Raleway";
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.seperation #span {
+    color: #ffffff;
+    padding-top: 0.75rem;
+}
+
+h5 {
+    font-family: 'Zeyada';
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* tablet adjust */
+@media only screen and (max-width: 775px) {
+    h3 {
+        font-size: 1rem;
+    }
+    h5 {
+        font-size: 2rem;
+    }
+}
+
+/* mobile adjust */
+@media only screen and (max-width: 425px) {
+    .testimonials {
+        padding-top: 1rem;
+    }
+    h3 {
+        font-size: 0.75rem;
+        padding-bottom: 0;
+    }
+    h5 {
+        font-size: 1.5rem;
+    }
+}
+
+/* meet up */
+.meet-up {
+    background-color: #fa40fa;
+    margin: 1rem 0;
+}
+
+.meet-up .meet-up-textbox h2 {
+    font-size: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.meet-up-textbox {
+    padding: 0.5rem 0;
+}
+
+/* tablet adjust */
+@media only screen and (max-width: 775px) {
+    .meet-up .meet-up-textbox h2 {
+        font-size: 1.5rem;
+    }
+
+    .meet-up-textbox {
+        padding: 0.5rem 0;
+    }
+}
+
+/* mobile adjust */
+@media only screen and (max-width: 425px) {
+    .meet-up .meet-up-textbox h2 {
+        font-size: 1rem;
+    }
+    
+    .meet-up-textbox {
+        padding: 0.5rem 0;
+    }
+}
+
+/* notation */
+footer {
+    background-color: #393939;
+    width: 100%;
+}
+
+h6 {
+    font-size: 0.5rem;
+    font-family: 'Raleway';
+    font-weight: 200;
+    padding: 0.5rem auto;
+}

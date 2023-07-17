@@ -1,6 +1,7 @@
 /* remember box-sizing, border-box tells brower to accourt for any border and padding, content-box gives you the default behavior */
 * { 
     box-sizing: border-box;
+    text-transform: capitalize;
 }
 
 html {
@@ -14,11 +15,11 @@ html {
     font-family: 'Ubuntu', sans-serif;
 }
 
-h1 {
+h2 {
     font-size: 2.5rem;
 }
 
-h2 {
+h3 {
     font-size: 1.35rem;
 }
 
@@ -86,4 +87,22 @@ a:visited {
     object-position: bottom;
     width: 400px;
     height: 400px;
+}
+
+/* projects section */
+.projects-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.project-image {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
 }

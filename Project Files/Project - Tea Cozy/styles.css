@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-image: url(./resourses/images/malik-skydsgaard-jY9rX-E7ztU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    margin-top: 85px;
+}
+
+h2 {
+    margin: 10px auto;
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+/* logo and basic nav bar */
+header {
+    height: 69px;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0);
+    border-bottom: solid 1px seashell;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 1000px;
+}
+
+#main-logo {
+    height: 50px;
+    padding-left: 10px;;
+}
+
+.nav-links {
+    font-size: 24px;
+    padding-right: 20px;
+}
+
+.nav-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li:not(:last-child)::after {
+    display: inline-block;
+    margin: 10px;
+    content: ' ';
+}
+
+a:link {
+    text-decoration: underline;
+    color: rgb(234, 234, 234);
+}
+
+a:hover {
+    color: rgba(234, 234, 234, 0.771);
+}
+
+a:visited {
+    color: rgb(234, 234, 234);
+}
+
+/* jumbotron / banner */
+.jumbotron {
+    background-image: url(./resourses/images/img-mission-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: 80vh;
+    max-width: 1200px;
+    max-height: 700px;
+    padding: 5px auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    width: 80vw;
+    max-width: 1200px;
+    min-height: 100px;
+    resize: vertical;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Tea of the Month */
+.tea-month {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tea-head {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 15px;
+}
+  
+.tea-container {
+    display: flex;
+    width: 75vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+  }
+  
+img {
+    max-width: 300px;
+    max-height: 200px;
+}
+  
+.tea-children {
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+}
+  
+figcaption {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+/* locations */
+.locations-whole-container {
+    background-image: url(./resourses/images/img-locations-background.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: 80vh;
+    max-width: 1200px;
+    max-height: 400px;
+    min-width: 600px;
+    padding: 5px auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#locations-title {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.locations-tile-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    min-width: 600px;
+    width: 75vw;
+    max-width: 1200px;
+    height: 300px;
+    max-height: 300px;
+    flex: 1 1 150px;
+}
+
+
+.locations-children {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 250px;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+}
+
+.loc-names {
+    padding: 15px 4px 15px;
+    font-size: 32px;
+}
+
+.address {
+    font-size: 16px;
+    padding: 15px 4px 15px;
+}
+
+/* contact */
+.contact {
+    height: 200px;
+    width: 100vw;
+    text-align: center;
+    padding: 10px 0px 10px;
+}
+
+.info {
+    padding: 10px 0px 10px;
+}
+
+/* footer */
+footer {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 18px;
+}
