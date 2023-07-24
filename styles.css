@@ -6,21 +6,34 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Reey';
+    src: url(./resources/Reey-Regular.otf);
+}
+
+@font-face {
+    font-family: 'HTF-Ultra';
+    src: url(./resources/GothamHTF-Ultra.otf);
+}
+
+@font-face {
+    font-family: 'HTF-Bold';
+    src: url(./resources/GothamHTF-Bold.otf);
+}
+
 html {
     font-size: 20px;
-    background-image: url(./images/augustine-wong-3Om4DHcaAc0-unsplash.jpg);
+    background-image: url(./images/luke-chesser-B_oL3jEt5L4-unsplash.jpg);
     background-repeat: repeat-y;
     background-size: cover;
     text-align: center;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'HTF-Bold';
 }
 
 h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.35rem;
+    font-size: 4rem;
+    font-family: 'Reey';
+    color: rgb(230, 230, 230);
 }
 
 h4 {
@@ -30,14 +43,10 @@ h4 {
 
 header {
     position: relative;
-    background-color: rgba(43, 202, 226, 0.428);
+    /* background-color: rgba(43, 202, 226, 0.428); */
     /* background color above to visualize box area */
 }
 
-#logo-design {
-    /* background-color: rgba(43, 202, 226, 0.428);
-    background color above to visualize box area */
-}
 
 #logo {
     width: 35%;
@@ -56,7 +65,7 @@ nav {
     margin: 0 auto;
     width: 100%;
     height: auto;
-    margin: 0.5rem auto;
+    margin: 0 auto;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -93,22 +102,25 @@ a:visited {
 
 /* about me */
 #about-me {
-    background-color: rgba(137, 43, 226, 0.428);
+    /* background-color: rgba(137, 43, 226, 0.428); */
     /* background color above to visualize box area */
+    margin: 1.5rem auto;
 }
 
 .about-container {
     display: flex;
     width: 100%;
     height: auto;
-    margin: 0.5rem auto;
+    margin: 0 auto;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
 }
 
 .my-photo-container {
     margin: 0.25rem;
+    padding-left: 0.5rem;
+    padding-top: 0.25rem;
 }
 
 #my-photo {
@@ -120,24 +132,42 @@ a:visited {
 
 .bio-container {
     margin: auto 0.25rem;
+    padding-right: 0.5rem;
+    padding-left: 2rem;
+    min-width: 30rem;
+}
+
+.list-about-me > li {
+    list-style: inside;
+    font-weight: 400;
+    font-size: 0.9rem;
 }
 
 /* projects section */
 #projects {
-    background-color: rgba(43, 226, 195, 0.777);
+    /* background-color: rgba(43, 226, 195, 0.777); */
     /* background color above to visualize box area */
+    margin: 1.5rem auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.project-text {
     margin: 0.5rem auto;
 }
 
-
 .projects-container {
     display: flex;
-    width: 100%;
+    width: 95%;
     height: auto;
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
+}
+
+.project-card {
+    margin: 0.45rem 0.25rem;
 }
 
 .project-image {
@@ -145,52 +175,81 @@ a:visited {
     height: 12.5rem;
     object-fit: cover;
     object-position: center;
+    margin-bottom: 0.25rem;
 }
+
 
 /* skill section */
 #skills {
-    background-color: rgba(220, 226, 43, 0.428);
+    /* background-color: rgba(220, 226, 43, 0.428); */
     /* background color above to visualize box area */
+    margin: 1.5rem auto;
+}
+
+.skills-text {
     margin: 0.5rem auto;
+    padding-top: 0.5rem;
 }
 
 .skills-container {
     display: flex;
     width: 100%;
     height: auto;
-    margin: 0 auto;
+    margin: 1rem auto;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
+    padding-bottom: 0.5rem;
 }
 
 .skills {
-    max-width: 4rem;
-    max-height: 4rem;
-    margin: 0.8rem;
+    font-size: 0.75rem;
+    padding: 2rem 6rem;
 }
 
 .skill-logo {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     object-fit: cover;
     object-position: center;
 }
 
 /* contact section */
 #contact {
-    background-color: rgba(226, 104, 43, 0.428);
+    /* background-color: rgba(226, 104, 43, 0.428); */
     /* background color above to visualize box area */
-    margin: 0.5rem auto;
+    margin: 1.5rem auto;
+}
+
+.contact-text {
+    margin: 1rem auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+
+.contact-text > h4 {
+    font-weight: 400;
 }
 
 /* copywrite section */
 #copywrite {
-    background-color: rgba(43, 46, 226, 0.428);
+    /* background-color: rgba(43, 46, 226, 0.428); */
     /* background color above to visualize box area */
-    margin: 0.5rem auto;
+    /* margin-bottom: 1rem; */
+    margin: 1.5rem auto;
 }
 
 .copywrite-text {
     font-size: 0.5rem;
+}
+
+/* spacer */
+.spacer > img {
+    width: 75%;
+    max-width: 100%;
+    max-height: auto;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
