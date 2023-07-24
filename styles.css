@@ -27,7 +27,7 @@ html {
     background-repeat: repeat-y;
     background-size: cover;
     text-align: center;
-    font-family: 'HTF-Bold';
+    font-family: 'HTF-Bold', 'Ubuntu';
 }
 
 h2 {
@@ -36,17 +36,24 @@ h2 {
     color: rgb(230, 230, 230);
 }
 
-h5 {
-    font-size: 2rem;
-    font-family: 'HTF-Ultra';
-    color: rgb(230, 230, 230);
-}
-
-
 h4 {
     font-size: 1rem;
 }
 
+
+h5 {
+    font-size: 2rem;
+    font-family: 'HTF-Ultra', 'Ubuntu';
+    font-weight: 800;
+    color: rgb(230, 230, 230);
+}
+
+/* heading title display changes */
+@media only screen and (max-width: 820px) {
+    html {
+        font-size: 10px;
+    };
+}
 
 header {
     position: relative;
@@ -63,6 +70,14 @@ header {
     padding-top: 1rem;
     margin: 0;
     z-index: 1;
+}
+
+/* logo display changes */
+@media only screen and (max-width: 820px) {
+    #logo {
+        width: 45%;
+        max-width: 60%;
+    };
 }
 
 /* nav bar */
@@ -185,6 +200,13 @@ a:visited {
     margin-bottom: 0.25rem;
 }
 
+/* projects display changes */
+@media only screen and (max-width: 820px) {
+    .projects-container {
+        width: 80%;
+    }
+}
+
 
 /* skill section */
 #skills {
@@ -200,7 +222,7 @@ a:visited {
 
 .skills-container {
     display: flex;
-    width: 100%;
+    width: 90%;
     height: auto;
     margin: 1rem auto;
     flex-wrap: wrap;
@@ -210,15 +232,30 @@ a:visited {
 }
 
 .skills {
-    font-size: 0.75rem;
-    padding: 2rem 6rem;
+    font-size: 0.65rem;
+    margin: 1rem 1.25rem;
 }
 
 .skill-logo {
-    width: 3rem;
-    height: 3rem;
-    object-fit: cover;
+    width: 85%;
+    height: 85%;
+    max-width: 5rem;
+    max-height: 5rem;
+    object-fit: contain;
     object-position: center;
+}
+
+/* skills display changes */
+@media only screen and (max-width: 820px) {
+    .skills-container {
+        width: 70%;
+        justify-items: center;
+    }
+    .skill-logo {
+        width: 100%;
+        height: 100%;
+        margin: 0.65rem 4rem;
+    }
 }
 
 /* contact section */
