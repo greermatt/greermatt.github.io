@@ -122,14 +122,16 @@ nav a:hover {
 }
 
 /* navbar display changes */
+@media only screen and (max-width: 1024px) {
+    nav ul {
+        margin-bottom: 1rem;
+    }
+}
 @media only screen and (max-width: 425px) {
     nav li:not(:last-child)::after {
         display: inline-block;
         margin: 0.15rem;
         content: ' ';
-    }
-    nav ul {
-        margin-bottom: 1rem;
     }
 }
 
@@ -331,6 +333,7 @@ nav a:hover {
 @media only screen and (max-width: 425px) {
     .js h4 {
         font-size: 1rem;
+        margin-bottom: 1.75rem;
     };
 }
 
