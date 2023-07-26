@@ -34,22 +34,15 @@ h2 {
     font-size: 4rem;
     font-family: 'Reey';
     color: rgb(230, 230, 230);
+    padding-bottom: 1rem;
 }
 
 h4 {
-    font-size: 1rem;
-}
-
-
-h5 {
-    font-size: 2rem;
-    font-family: 'HTF-Ultra', 'Ubuntu';
-    font-weight: 800;
-    color: rgb(230, 230, 230);
+    font-size: 1.5rem;
 }
 
 /* heading title display changes */
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 1024px) {
     html {
         font-size: 10px;
     };
@@ -73,7 +66,7 @@ header {
 }
 
 /* logo display changes */
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 1024px) {
     #logo {
         width: 45%;
         max-width: 60%;
@@ -120,12 +113,12 @@ a:link {
     color: rgb(0, 0, 0);
 }
     
-a:hover {
-    color: rgba(0, 0, 0, 0.729);
-}
-    
 a:visited {
     color: rgb(0, 0, 0);
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
 }
 
 /* about me */
@@ -153,9 +146,10 @@ a:visited {
 
 #my-photo {
     object-fit: cover;
-    object-position: bottom;
-    width: 18rem;
+    object-position: 60% 75%;
+    width: 25rem;
     height: 18rem;
+    border-radius: 75% / 20%;
 }
 
 .bio-container {
@@ -230,7 +224,7 @@ a:visited {
 }
 
 /* projects display changes */
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 1024px) {
     .projects-container {
         width: 80%;
     }
@@ -280,7 +274,7 @@ a:visited {
 }
 
 /* skills display changes */
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 1024px) {
     .skills-container {
         width: 70%;
         justify-items: center;
@@ -303,6 +297,21 @@ a:visited {
     }
 }
 
+/* javascript section */
+.js > button {
+    width: auto;
+    height: auto;
+    font-family: 'HTF-Bold', 'Ubuntu';
+    font-size: 1.5rem;
+    padding: 0.25rem 1rem;
+    margin-top: 1rem;
+    border-radius: 15% 15%;
+}
+
+.js > h4 {
+    margin-top: 1.2rem;
+}
+
 /* contact section */
 #contact {
     /* background-color: rgba(226, 104, 43, 0.428); */
@@ -319,6 +328,10 @@ a:visited {
 
 .contact-text > h4 {
     font-weight: 400;
+}
+
+.contact-text a:hover {
+    color: rgb(255, 255, 255);
 }
 
 /* copywrite section */
