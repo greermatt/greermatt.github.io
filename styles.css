@@ -128,6 +128,9 @@ nav a:hover {
     }
 }
 @media only screen and (max-width: 425px) {
+    nav {
+        font-size: 0.85rem;
+    }
     nav li:not(:last-child)::after {
         display: inline-block;
         margin: 0.15rem;
